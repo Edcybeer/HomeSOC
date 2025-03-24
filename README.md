@@ -1,7 +1,7 @@
 # HomeSOC
 
 # Overview
-This repository documents my personal cybersecurity home lab for learning, testing, and simulating real-world network environments.
+This lab simulates a realistic enterprise network using pfSense as the firewall/router. It includes offensive, defensive, and monitoring tools to practice penetration testing, Active Directory attacks, and SIEM logging.
 
 # Tools/OS Installed
 - VirtualBox
@@ -14,18 +14,58 @@ This repository documents my personal cybersecurity home lab for learning, testi
 
 ---
 
-# Lab Architecture
-A virtualized network with pfSense acting as the gateway. Kali used for offensive security, Windows Server for AD services, Splunk for monitoring.
+# Network Topology
 
-# Setup Instructions
-Basic setup guides and configurations are located in `/docs`. More detailed instructions to follow as lab evolves.
+Diagram Overview:
+
+pfSense Firewall
+
+IP: 192.168.1.10
+
+DHCP: 192.168.1.20 – 192.168.1.50
+
+Kali Linux
+
+IP: 192.168.1.100
+
+Purpose: Offensive testing, exploitation
+
+Windows 11
+
+IP: 192.168.1.101
+
+Target system for attacks
+
+Metasploit VM
+
+IP: 192.168.1.7
+
+Exploit framework testing
+
+Windows Server
+
+Role: Active Directory Domain Controller
+
+Services: AD DS, DNS, GPO
+
+Splunk SIEM
+
+Purpose: Log collection, detection, and response
+
+
 
 ---
 
-# Features
-- Simulated enterprise network
-- Firewall rules (pfSense)
-- Active Directory domain controller
-- SIEM monitoring with Splunk
-- Penetration testing with Kali + Metasploit
+# Tasks Completed
+Installed and configured pfSense (LAN/WAN, DHCP, firewall rules)
+
+Deployed Windows Server, installed Active Directory Domain Services (AD DS)
+
+Created domain lab.local, added users and GPOs
+
+Installed Kali Linux and Metasploit for offensive testing
+
+Set up Splunk, forwarded logs from Windows and pfSense
+
+Simulated attacks, analyzed logs and alerts in Splunk
 
