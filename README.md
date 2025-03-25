@@ -16,43 +16,12 @@ This lab simulates a realistic enterprise network using pfSense as the firewall/
 
 # Network Topology
 
-Diagram Overview:
-
-pfSense Firewall
-
-IP: 192.168.1.10
-
-DHCP: 192.168.1.20 – 192.168.1.50
-
-Kali Linux
-
-IP: 192.168.1.100
-
-Purpose: Offensive testing, exploitation
-
-Windows 11
-
-IP: 192.168.1.101
-
-Target system for attacks
-
-Metasploit VM
-
-IP: 192.168.1.7
-
-Exploit framework testing
-
-Windows Server
-
-Role: Active Directory Domain Controller
-
-Services: AD DS, DNS, GPO
-
-Splunk SIEM
-
-Purpose: Log collection, detection, and response
-
-
+VLAN Interface Configuration
+VLAN	Interface IP (pfSense)	DHCP Range	DNS Server
+VLAN10	192.168.10.1/24	192.168.10.20 – 192.168.10.50	192.168.10.1 (local DNS)
+VLAN20	192.168.20.1/24	192.168.20.20 – 192.168.20.50	192.168.20.1
+VLAN30	192.168.30.1/24	192.168.30.20 – 192.168.30.50	192.168.30.1
+VLAN40	192.168.40.1/24	192.168.40.20 – 192.168.40.50	192.168.40.1
 
 ---
 
