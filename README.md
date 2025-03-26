@@ -1,40 +1,25 @@
-# HomeSOC
+# 🛡️ Cybersecurity Homelab: Penetration Testing & SOC Environment
 
-# Overview
-This lab simulates a realistic enterprise network using pfSense as the firewall/router. It includes offensive, defensive, and monitoring tools to practice penetration testing, Active Directory attacks, and SIEM logging.
+Welcome to my cybersecurity homelab project! This is a hands-on, end-to-end lab environment designed to simulate real-world cybersecurity operations. From penetration testing to deploying a mini Security Operations Center (SOC), this lab demonstrates the process of building, monitoring, and securing IT infrastructure—all from scratch.
 
-# Tools/OS Installed
-- VirtualBox
-- Kali Linux
-- Windows 11
-- Windows Server (Active Directory)
-- Metasploit Framework
-- pfSense (Firewall/Router)
-- Splunk (SIEM)
+# 🚀 Project Highlights
 
----
+🔐 **Penetration Testing Lab Setup**  
+📡 **Network Segmentation with pfSense**  
+🕵️ **Centralized Log Monitoring with Splunk**  
+🖥️ **Windows Server Hardening & Active Directory Configuration**  
+🔄 **Simulated Enterprise-Grade Threat Detection**
 
-# Network Topology
+# 🛠️ Tech Stack
 
-VLAN Interface Configuration
-VLAN	Interface IP (pfSense)	DHCP Range	DNS Server
-VLAN10	192.168.10.1/24	192.168.10.20 – 192.168.10.50	192.168.10.1 (local DNS)
-VLAN20	192.168.20.1/24	192.168.20.20 – 192.168.20.50	192.168.20.1
-VLAN30	192.168.30.1/24	192.168.30.20 – 192.168.30.50	192.168.30.1
-VLAN40	192.168.40.1/24	192.168.40.20 – 192.168.40.50	192.168.40.1
+- **pfSense** – Firewall & network traffic control  
+- **Splunk** – Log aggregation & analysis  
+- **Windows Server** – Domain Controller, AD setup, Group Policy  
+- **Kali Linux** – Penetration testing and offensive tools  
+- **VirtualBox / VMware** – Virtualization platform
 
----
+# 🧠 Why This Lab?
 
-# Tasks Completed
-Installed and configured pfSense (LAN/WAN, DHCP, firewall rules)
+In cybersecurity, practice is everything. This project was born out of the need to build a secure, testable, and realistic environment to explore both offensive and defensive security techniques. The lab provides the foundation for real-world skill-building in a safe and controlled setup.
 
-Deployed Windows Server, installed Active Directory Domain Services (AD DS)
-
-Created domain lab.local, added users and GPOs
-
-Installed Kali Linux and Metasploit for offensive testing
-
-Set up Splunk, forwarded logs from Windows and pfSense
-
-Simulated attacks, analyzed logs and alerts in Splunk
 
